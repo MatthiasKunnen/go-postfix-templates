@@ -1,5 +1,8 @@
 ## others ##
 
+.arg : wrap expression in function call
+	ANY        →  $function$($expr$)$end$
+
 .wrap : wrap err
 	ERROR      →  errors.Wrap($expr$, "$end$")
 	
